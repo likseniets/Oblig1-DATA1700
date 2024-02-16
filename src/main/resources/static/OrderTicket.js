@@ -1,6 +1,6 @@
 let Tickets = []; //Array for alle tickets
 
-function validateMovie(movie, val) { //validering for p se om film er valgt
+function validateMovie(movie, val) { //validering for å se om film er valgt
     if (movie === "") { //Sjekker at valgt film ikke er første som har tom string value
         const out = "<p style='color:red'>Du må velge film</p>" //lager feilmelding
         document.getElementById("movieError").innerHTML = out; //setter inn feilmelding i element med id movieError
@@ -75,7 +75,7 @@ function clearInput() { //Setter input fields til å være tomme etter lagring
     document.getElementById("MailInput").value = "";
 }
 function OrderTicket() {
-    let order = { //Objekt med all data
+    let order = { //Objekt med all data fra inputs
         film: document.getElementById("Film").value,
         antall: document.getElementById("AntallInput").value,
         fornavn: document.getElementById("FirstnameInput").value,
