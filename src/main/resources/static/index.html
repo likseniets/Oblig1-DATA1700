@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kino</title>
+    <script src="OrderTicket.js"></script>
+</head>
+<body>
+    <h1>Bestilling av kinobiletter</h1>
+    </br>
+    <table>
+        <tr>
+            <td>
+                <p>Film</p>
+            </td>
+            <td>
+                <select id="Film">
+                    <option value="">Select an </option>
+                    <option value="Svensken Artur">Svensken Artur</option>
+                    <option value="Norsken Eskil">Norsken Eskil</option>
+                </select>
+            </td>
+            <td id="movieError"></td>
+        </tr>
+        <tr>
+            <td>
+                <p>Antall</p>
+            </td>
+            <td>
+                <input type="number" id="AntallInput">
+            </td>
+            <td id="numberError"></td>
+        </tr>
+        <tr>
+            <td>
+                <p>Fornavn</p>
+            </td>
+            <td>
+                <input type="text" id="FirstnameInput">
+            </td>
+            <td id="firstnameError"></td>
+        </tr>
+        <tr>
+            <td>
+                <p>Etternavn</p>
+            </td>
+            <td>
+                <input type="text" id="LastnameInput">
+            </td>
+            <td id="lastnameError"></td>
+        </tr>
+        <tr>
+            <td>
+                <p>Telefonnr</p>
+            </td>
+            <td>
+                <input type="number" id="PhoneInput">
+            </td>
+            <td id="phoneError"></td>
+        </tr>
+        <tr>
+            <td>
+                <p>Mail</p>
+            </td>
+            <td>
+                <input type="email" id="MailInput">
+            </td>
+            <td id="mailError"></td>
+        </tr>
+    </table>
+    <button type="button" onclick="OrderTicket();">Yooooo</button>
+    <h1>Alle Biletter</h1>
+    <div id="TicketTable"></div>
+</body>
+</html>
